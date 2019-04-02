@@ -20,13 +20,7 @@ import java.io.Serializable;
 /**
  * @author <a href="mailto:stanley.shyiko@gmail.com">Stanley Shyiko</a>
  */
-public interface EventHeader extends Serializable {
+public interface RowEventData extends Serializable {
+    long getTableId();
 
-    long getTimestamp();
-    EventType getEventType();
-    long getServerId();
-    long getEventLength();
-    long getHeaderLength();
-    long getDataLength();
-    long getNextPosition();
 }
