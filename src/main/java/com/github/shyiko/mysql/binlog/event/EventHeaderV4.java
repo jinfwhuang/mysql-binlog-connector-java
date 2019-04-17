@@ -69,6 +69,7 @@ public class EventHeaderV4 implements EventHeader {
         return nextPosition - eventLength;
     }
 
+    @Override
     public long getNextPosition() {
         return nextPosition;
     }
